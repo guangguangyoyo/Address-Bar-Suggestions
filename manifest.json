@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "address bar suggestion",
+  "description": "Enter the suggested Google Browser extension in the address bar",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "omnibox": {"keyword": " "},
+  "background": {
+    "service_worker": "background.js"
+  }
+}
